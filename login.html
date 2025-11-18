@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Biblioteca</title>
+    <link rel="stylesheet" href="/templates/static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navbar-title">Biblioteca - Prof. Fatima Chaguri De Oliveira</h1>
+            <ul class="navbar-nav">
+                <li><a href="register.html">Registrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div id="flash-messages"></div>
+        <div class="form-container">
+            <h2>Login na Biblioteca</h2>
+            <form id="login-form" class="book-form">
+                <div class="form-group">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" required class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required class="form-input">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <p>Não tem conta? <a href="register.html">Registrar-se</a></p>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 - ByLvxhck</p>
+    </footer>
+    
+    <script src="/templates/js/script.js"></script>
+</body>
+</html>

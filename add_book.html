@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Livro - Sistema de Biblioteca</title>
+    <link rel="stylesheet" href="/templates/static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navbar-title">Biblioteca - Prof. Fatima Chaguri De Oliveira</h1>
+            <ul class="navbar-nav">
+                <li><a href="#" id="logout-btn">Logout</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="books.html">Ver Livros</a></li>
+                <li><a href="add_book.html">Adicionar um Livro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div id="flash-messages"></div>
+        <div class="form-container">
+            <p><a href="index.html" id="returnbtn">Voltar</a></p>
+            <h2>Adicionar um Novo Livro</h2>
+            <form id="book-form" class="book-form">
+                <div class="form-group">
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" name="title" required class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">Autor:</label>
+                    <input type="text" id="author" name="author" required class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn" required class="form-input">
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="available" name="available" checked> Disponível para alugar
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Adicionar Livro</button>
+                <a href="books.html" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 - ByLvxhck</p>
+    </footer>
+    
+    <script src="/templates/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros - Sistema de Biblioteca</title>
+    <link rel="stylesheet" href="/templates/static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navbar-title">Biblioteca - Prof. Fatima Chaguri De Oliveira</h1>
+            <ul class="navbar-nav">
+                <li><a href="#" id="logout-btn">Logout</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="books.html">Ver Livros</a></li>
+                <li><a href="add_book.html">Adicionar um Livro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div id="flash-messages"></div>
+        <div class="books-container">
+            <p><a href="index.html" id="returnbtn">Voltar</a></p>
+            <div class="books-header">
+                <h2>Livros na Prateleira</h2>
+                
+                <form id="search-form" class="search-form">
+                    <input type="text" id="search" placeholder="Busque por um título ou autor..." class="search-input">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <button type="button" id="clear-search" class="btn btn-secondary">Limpar</button>
+                </form>
+            </div>
+            
+            <div id="books-list">
+                <!-- Livros aparecerão aqui dinamicamente -->
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 - ByLvxhck</p>
+    </footer>
+    
+    <script src="/templates/js/script.js"></script>
+</body>
+</html>
